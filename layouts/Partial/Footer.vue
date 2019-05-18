@@ -10,16 +10,29 @@
                 <a href="" class="footer-nav-link">Menu</a>
               </li>
               <li class="footer-nav-item">
-                <a href="" class="footer-nav-link">Menu</a>
+                <a href="" class="footer-nav-link">Package</a>
               </li>
               <li class="footer-nav-item">
-                <a href="" class="footer-nav-link">Menu</a>
+                <a href="" class="footer-nav-link">About us</a>
               </li>
               <li class="footer-nav-item">
-                <a href="" class="footer-nav-link">Menu</a>
+                <a href="" class="footer-nav-link">Contact us</a>
               </li>
             </ul>
           </nav>
+          <div class="social">
+            <ul class="social-list">
+              <li class="social-item">
+                <a href="" class="social-link"><i class="fab fa-facebook-square"></i></a>
+              </li>
+              <li class="social-item">
+                <a href="" class="social-link"><i class="fab fa-instagram"></i></a>
+              </li>
+              <li class="social-item">
+                <a href="" class="social-link"><i class="fab fa-twitter-square"></i></a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -36,8 +49,7 @@
   .footer {
     display: block;
     position: relative;
-    padding: 90px 0 150px;
-    background: #FFF url("../../assets/img/footer-bg.png") no-repeat 50% 50%/500px;
+    padding: 60px 0 30px;
     &-navbar {
       display: flex;
       justify-content: flex-start;
@@ -58,6 +70,9 @@
         margin-right: 3rem;
         font-size: 2rem;
         color: #452268;
+        &:hover {
+          text-decoration: none;
+        }
       }
       &-link {
         display: block;
@@ -76,5 +91,36 @@
         }
       }
     }
+    /*
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 1295px;
+      height: 1295px;
+      right: -400px;
+      bottom: -400px;
+      background: transparent url("../../assets/img/footer-bg.png") no-repeat 0 0/cover;
+      z-index: 9999;
+    }
+    */
+  }
+
+  .social-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .social-link {
+    display: block;
+    margin-right: 15px;
+    font-size: 2rem;
+    text-align: center;
+    color: #452268;
   }
 </style>

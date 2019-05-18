@@ -9,13 +9,13 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Package</a>
+              <nuxt-link class="nav-link" to="/">Package</nuxt-link>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About us</a>
+              <nuxt-link class="nav-link" to="/">About us</nuxt-link>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact us</a>
+              <nuxt-link class="nav-link" to="/">Contact us</nuxt-link>
             </li>
           </ul>
         </div>

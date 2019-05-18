@@ -3,17 +3,20 @@
     <Header/>
     <nuxt/>
     <Footer/>
+    <Dev/>
   </div>
 </template>
 
 <script>
   import Header from './Partial/Header.vue'
   import Footer from './Partial/Footer'
+  import Dev from '../components/Dev'
   export default {
     name: 'default',
     components: {
       Header,
-      Footer
+      Footer,
+      Dev
     }
   }
 </script>

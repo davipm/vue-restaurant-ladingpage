@@ -4,14 +4,42 @@
       <h2 class="recipes-title">Our Popular Recipes</h2>
       <div class="recipes-content">
         <no-ssr>
-          <carousel>
-            <img src="https://placeimg.com/200/200/any?1" alt="">
-
-            <img src="https://placeimg.com/200/200/any?2" alt="">
-
-            <img src="https://placeimg.com/200/200/any?3" alt="">
-
-            <img src="https://placeimg.com/200/200/any?4" alt="">
+          <carousel :responsive="{ 0: {items: 1,nav: false}, 768: {items: 1, nav: false}, 960: {items: 4, nav: false}}" :nav="false">
+            <div class="card">
+              <img src="../../assets/img/img-1.png" alt="" class="img-fluid">
+              <div class="card-body">
+                <h5 class="card-title">Ham Sandwich <span class="price">$10.50</span></h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="../../assets/img/img-1.png" alt="" class="img-fluid">
+              <div class="card-body">
+                <h5 class="card-title">Ham Sandwich <span class="price">$10.50</span></h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="../../assets/img/img-1.png" alt="" class="img-fluid">
+              <div class="card-body">
+                <h5 class="card-title">Ham Sandwich <span class="price">$10.50</span></h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="../../assets/img/img-1.png" alt="" class="img-fluid">
+              <div class="card-body">
+                <h5 class="card-title">Ham Sandwich <span class="price">$10.50</span></h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="../../assets/img/img-1.png" alt="" class="img-fluid">
+              <div class="card-body">
+                <h5 class="card-title">Ham Sandwich <span class="price">$10.50</span></h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,</p>
+              </div>
+            </div>
           </carousel>
         </no-ssr>
       </div>
@@ -42,5 +70,17 @@
       margin: 0 auto 2rem;
       text-align: center;
     }
+  }
+
+  .card {
+    display: block;
+    position: relative;
+    border: none;
+    margin-right: 10px;
+  }
+
+  .container-fluid {
+    padding-right: 0;
+    padding-left: 10px;
   }
 </style>
