@@ -1,13 +1,67 @@
 <template>
-  $END$
+  <header class="header">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">Victorya</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Package</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 </template>
 
 <script>
   export default {
-    name: 'Header'
+    name: 'Header',
   }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+  .header {
+    position: absolute;
+    display: block;
+    padding: 30px 0;
+    width: 100%;
+    background: transparent;
+    z-index: 1;
+  }
 
+  .navbar-brand {
+    display: block;
+    margin-right: 3rem;
+    font-size: 36px;
+    color: #452268;
+  }
+
+  .nav-link {
+    display: block;
+    position: relative;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 6px;
+    margin-right: 1.5rem;
+    color: #ABADAE;
+    -webkit-transition: all .15s ease-in-out;
+    -moz-transition: all .15s ease-in-out;
+    -ms-transition: all .15s ease-in-out;
+    -o-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+    &:hover {
+      color: #452268;
+    }
+  }
 </style>
