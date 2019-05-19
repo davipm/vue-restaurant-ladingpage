@@ -29,6 +29,7 @@
     font-size: 1rem;
     font-weight: normal;
     font-style: normal;
+    overflow-x: hidden;
   }
 
   .section {
