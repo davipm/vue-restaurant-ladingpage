@@ -43,6 +43,11 @@
       margin-right: auto;
       border-bottom-right-radius: 9rem;
       box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+      // media query small
+      @media (max-width: 576px) {
+        width: 100%;
+        margin-right: 0;
+      }
     }
     &-title {
       margin-bottom: 1.5rem;

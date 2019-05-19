@@ -2,7 +2,7 @@
   <footer class="footer">
     <div class="container">
       <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-12 col-lg-8">
           <nav class="footer-navbar">
             <a href="" class="footer-nav-brand">Victorya</a>
             <ul class="footer-nav">
@@ -122,5 +122,12 @@
     font-size: 2rem;
     text-align: center;
     color: #452268;
+  }
+
+  @media (max-width: 768px) {
+    .footer-navbar,
+    .footer-nav {
+      display: block;
+    }
   }
 </style>

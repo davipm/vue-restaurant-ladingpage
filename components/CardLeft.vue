@@ -42,6 +42,11 @@
       height: auto;
       margin-left: auto;
       border-bottom-right-radius: 0;
+      @media (max-width: 576px) {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+      }
     }
     &-title {
       margin-bottom: 1.5rem;

@@ -79,4 +79,23 @@
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
   }
+
+  @media (max-width: 576px) {
+    .form {
+      padding: 1rem;
+      &-content {
+        display: block;
+      }
+      &-control {
+        width: 100%;
+        margin-bottom: 15px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+    }
+
+    .btn-primary {
+      border-radius: 10px;
+    }
+  }
 </style>

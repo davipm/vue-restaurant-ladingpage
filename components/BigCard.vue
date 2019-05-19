@@ -52,4 +52,10 @@
     text-align: center;
     margin-top: 1rem;
   }
+
+  @media (max-width: 576px) {
+    .big-card {
+      width: 100%;
+    }
+  }
 </style>

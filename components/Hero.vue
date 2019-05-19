@@ -2,7 +2,7 @@
   <section class="hero">
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-12 col-lg-6">
           <div class="hero-container">
             <h2 class="hero-title">Good food choices are good investments.</h2>
             <p class="hero-text">There is a powerful need for symbolism, and that means the architecture must have something that appeals to the human heart.</p>
@@ -56,5 +56,30 @@
 
   .btn-primary {
     margin-right: 30px;
+  }
+
+  @media (max-width: 576px) {
+    .footer-buttons {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+
+      .btn-primary,
+      .button-text {
+        margin-right: 0;
+      }
+
+      .button-text {
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+
+      .btn-round {
+        display: block;
+        width: 60px;
+        height: 60px;
+        margin: auto;
+      }
+    }
   }
 </style>
