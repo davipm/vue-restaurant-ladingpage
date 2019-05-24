@@ -5,68 +5,13 @@
       <p class="food-subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.</p>
       <div class="food-content">
         <div class="row">
-          <div class="col-md-4">
-            <nuxt-link to="/" class="card-food-lik">
+          <div class="col-md-4" v-for="(item, index) in items" :key="index">
+            <nuxt-link :to="item.link" class="card-food-lik">
               <div class="card">
-                <img src="../../assets/img/img-1.png" alt="" class="img-fluid">
+                <img :src="item.img" :alt="item.alt" class="img-fluid">
                 <div class="card-body">
-                  <h5 class="card-title">Ham Sandwich <span class="price">$10.50</span></h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,</p>
-                </div>
-              </div>
-            </nuxt-link>
-          </div>
-          <div class="col-md-4">
-            <nuxt-link to="/" class="card-food-lik">
-              <div class="card">
-                <img src="../../assets/img/img-1.png" alt="" class="img-fluid">
-                <div class="card-body">
-                  <h5 class="card-title">Ham Sandwich <span class="price">$10.50</span></h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,</p>
-                </div>
-              </div>
-            </nuxt-link>
-          </div>
-          <div class="col-md-4">
-            <nuxt-link to="/" class="card-food-lik">
-              <div class="card">
-                <img src="../../assets/img/img-1.png" alt="" class="img-fluid">
-                <div class="card-body">
-                  <h5 class="card-title">Ham Sandwich <span class="price">$10.50</span></h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,</p>
-                </div>
-              </div>
-            </nuxt-link>
-          </div>
-          <div class="col-md-4">
-            <nuxt-link to="/" class="card-food-lik">
-              <div class="card">
-                <img src="../../assets/img/img-1.png" alt="" class="img-fluid">
-                <div class="card-body">
-                  <h5 class="card-title">Ham Sandwich <span class="price">$10.50</span></h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,</p>
-                </div>
-              </div>
-            </nuxt-link>
-          </div>
-          <div class="col-md-4">
-            <nuxt-link to="/" class="card-food-lik">
-              <div class="card">
-                <img src="../../assets/img/img-1.png" alt="" class="img-fluid">
-                <div class="card-body">
-                  <h5 class="card-title">Ham Sandwich <span class="price">$10.50</span></h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,</p>
-                </div>
-              </div>
-            </nuxt-link>
-          </div>
-          <div class="col-md-4">
-            <nuxt-link to="/" class="card-food-lik">
-              <div class="card">
-                <img src="../../assets/img/img-1.png" alt="" class="img-fluid">
-                <div class="card-body">
-                  <h5 class="card-title">Ham Sandwich <span class="price">$10.50</span></h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,</p>
+                  <h5 class="card-title" v-html="item.title">Ham Sandwich <span class="price">$10.50</span></h5>
+                  <p class="card-text" v-text="item.text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,</p>
                 </div>
               </div>
             </nuxt-link>
@@ -82,7 +27,55 @@
 
 <script>
   export default {
-    name: 'Foods'
+    name: 'Foods',
+    data() {
+      return {
+        items: [
+          {
+            img:  require('../../assets/img/img-1.png'),
+            alt: 'Image Card',
+            title: 'Ham Sandwich <span class="price" style="color: #F98169">$10.50</span>',
+            text: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr,',
+            link: '/'
+          },
+          {
+            img:  require('../../assets/img/img-1.png'),
+            alt: 'Image Card',
+            title: 'Ham Sandwich <span class="price" style="color: #F98169">$10.50</span>',
+            text: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr,',
+            link: '/'
+          },
+          {
+            img:  require('../../assets/img/img-1.png'),
+            alt: 'Image Card',
+            title: 'Ham Sandwich <span class="price" style="color: #F98169">$10.50</span>',
+            text: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr,',
+            link: '/'
+          },
+          {
+            img:  require('../../assets/img/img-1.png'),
+            alt: 'Image Card',
+            title: 'Ham Sandwich <span class="price" style="color: #F98169">$10.50</span>',
+            text: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr,',
+            link: '/'
+          },
+          {
+            img:  require('../../assets/img/img-1.png'),
+            alt: 'Image Card',
+            title: 'Ham Sandwich <span class="price" style="color: #F98169">$10.50</span>',
+            text: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr,',
+            link: '/'
+          },
+          {
+            img:  require('../../assets/img/img-1.png'),
+            alt: 'Image Card',
+            title: 'Ham Sandwich <span class="price" style="color: #F98169">$10.50</span>',
+            text: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr,',
+            link: '/'
+          },
+        ]
+      }
+    }
   }
 </script>
 
@@ -91,18 +84,21 @@
     display: block;
     position: relative;
     padding-top: 0;
+
     &-title {
       margin-bottom: 1.5rem;
       text-align: center;
       font-size: 2rem;
       color: #452268;
     }
+
     &-subtitle {
       display: block;
       width: 70%;
       margin: 0 auto 2rem;
       text-align: center;
     }
+
     &-footer {
       margin-top: 3rem;
       text-align: center;
@@ -126,7 +122,6 @@
       color: #AEB2B4;
       cursor: pointer;
       text-decoration: none;
-
       &:hover {
         text-decoration: none;
       }
