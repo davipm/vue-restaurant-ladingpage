@@ -1,8 +1,8 @@
 <template>
   <section class="section food">
     <div class="container">
-      <h3 class="food-title">Explore Our Foods</h3>
-      <p class="food-subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.</p>
+      <h3 class="food-title">{{ title }}</h3>
+      <p class="food-subtitle">{{ subtitle }}</p>
       <div class="food-content">
         <div class="row">
           <div class="col-md-4" v-for="(item, index) in items" :key="index">
@@ -30,6 +30,8 @@
     name: 'Foods',
     data() {
       return {
+        title: 'Explore Our Foods',
+        subtitle: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.',
         items: [
           {
             img:  require('../../assets/img/img-1.png'),

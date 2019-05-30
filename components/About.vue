@@ -4,7 +4,6 @@
       <CardRight/>
       <CardLeft/>
       <BigCard/>
-      <!--<Test/>-->
     </div>
   </section>
 </template>
@@ -13,14 +12,12 @@
   import CardRight from './CardRight'
   import CardLeft from './CardLeft'
   import BigCard from './BigCard'
-  import Test from './Test'
   export default {
     name: 'About',
     components: {
       CardRight,
       CardLeft,
       BigCard,
-      Test
     }
   }
 </script>

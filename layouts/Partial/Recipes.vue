@@ -12,36 +12,6 @@
                 <p class="card-text" v-text="item.text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,</p>
               </div>
             </div>
-            <!--
-            <div class="card">
-              <img src="../../assets/img/img-1.png" alt="" class="img-fluid">
-              <div class="card-body">
-                <h5 class="card-title">Ham Sandwich <span class="price">$10.50</span></h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,</p>
-              </div>
-            </div>
-            <div class="card">
-              <img src="../../assets/img/img-1.png" alt="" class="img-fluid">
-              <div class="card-body">
-                <h5 class="card-title">Ham Sandwich <span class="price">$10.50</span></h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,</p>
-              </div>
-            </div>
-            <div class="card">
-              <img src="../../assets/img/img-1.png" alt="" class="img-fluid">
-              <div class="card-body">
-                <h5 class="card-title">Ham Sandwich <span class="price">$10.50</span></h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,</p>
-              </div>
-            </div>
-            <div class="card">
-              <img src="../../assets/img/img-1.png" alt="" class="img-fluid">
-              <div class="card-body">
-                <h5 class="card-title">Ham Sandwich <span class="price">$10.50</span></h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,</p>
-              </div>
-            </div>
-            -->
           </carousel>
         </no-ssr>
       </div>
