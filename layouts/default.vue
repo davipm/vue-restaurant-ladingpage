@@ -4,6 +4,7 @@
     <nuxt/>
     <Footer/>
     <Dev/>
+    <BackToTop/>
   </div>
 </template>
 
@@ -11,12 +12,14 @@
   import Header from './Partial/Header.vue'
   import Footer from './Partial/Footer'
   import Dev from '../components/Dev'
+  import BackToTop from '../components/BackToTop'
   export default {
     name: 'default',
     components: {
       Header,
       Footer,
-      Dev
+      Dev,
+      BackToTop
     }
   }
 </script>

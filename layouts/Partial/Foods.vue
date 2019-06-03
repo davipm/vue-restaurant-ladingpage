@@ -41,35 +41,35 @@
             link: '/'
           },
           {
-            img:  require('../../assets/img/img-1.png'),
+            img:  require('../../assets/img/img-2.png'),
             alt: 'Image Card',
             title: 'Ham Sandwich <span class="price" style="color: #F98169">$10.50</span>',
             text: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr,',
             link: '/'
           },
           {
-            img:  require('../../assets/img/img-1.png'),
+            img:  require('../../assets/img/img-3.png'),
             alt: 'Image Card',
             title: 'Ham Sandwich <span class="price" style="color: #F98169">$10.50</span>',
             text: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr,',
             link: '/'
           },
           {
-            img:  require('../../assets/img/img-1.png'),
+            img:  require('../../assets/img/img-4.png'),
             alt: 'Image Card',
             title: 'Ham Sandwich <span class="price" style="color: #F98169">$10.50</span>',
             text: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr,',
             link: '/'
           },
           {
-            img:  require('../../assets/img/img-1.png'),
+            img:  require('../../assets/img/img-5.png'),
             alt: 'Image Card',
             title: 'Ham Sandwich <span class="price" style="color: #F98169">$10.50</span>',
             text: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr,',
             link: '/'
           },
           {
-            img:  require('../../assets/img/img-1.png'),
+            img:  require('../../assets/img/img-6.png'),
             alt: 'Image Card',
             title: 'Ham Sandwich <span class="price" style="color: #F98169">$10.50</span>',
             text: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr,',

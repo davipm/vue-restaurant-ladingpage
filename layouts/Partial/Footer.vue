@@ -4,11 +4,15 @@
       <div class="row">
         <div class="col-md-12 col-lg-8">
           <nav class="footer-navbar">
-            <a href="" class="footer-nav-brand">Victorya</a>
+            <nuxt-link to="/" class="footer-nav-brand">Victorya</nuxt-link>
             <ul class="footer-nav">
-              <li class="footer-nav-item">
-                <a href="" class="footer-nav-link">Menu</a>
+              <li class="footer-nav-item" v-for="(item, index) in menus" :key="index">
+                <nuxt-link :to="item.link" class="footer-nav-link">{{ item.title }}</nuxt-link>
               </li>
+              <li class="footer-nav-item">
+                <nuxt-link :to="`/test/${menu}`" class="footer-nav-link">Item</nuxt-link>
+              </li>
+              <!--
               <li class="footer-nav-item">
                 <a href="" class="footer-nav-link">Package</a>
               </li>
@@ -18,6 +22,7 @@
               <li class="footer-nav-item">
                 <a href="" class="footer-nav-link">Contact us</a>
               </li>
+              -->
             </ul>
           </nav>
           <div class="social">
@@ -41,7 +46,18 @@
 
 <script>
   export default {
-    name: 'Footer'
+    name: 'Footer',
+    data() {
+      return {
+        menu: 'item-2',
+        menus: [
+          { title: 'Home', link: '/' },
+          { title: 'Package', link: '/' },
+          { title: 'About us', link: '/' },
+          { title: 'Contact us', link: '/' },
+        ]
+      }
+    }
   }
 </script>
 
@@ -50,6 +66,7 @@
     display: block;
     position: relative;
     padding: 60px 0 30px;
+
     &-navbar {
       display: flex;
       justify-content: flex-start;
@@ -58,6 +75,7 @@
       border-top: 1px solid #AEB2B4;
       border-bottom: 1px solid #AEB2B4;
     }
+
     &-nav {
       display: flex;
       justify-content: flex-start;
@@ -65,15 +83,18 @@
       padding: 0;
       margin: 0;
       list-style: none;
+
       &-brand {
         display: block;
         margin-right: 3rem;
         font-size: 2rem;
         color: #452268;
+
         &:hover {
           text-decoration: none;
         }
       }
+
       &-link {
         display: block;
         position: relative;
@@ -85,12 +106,14 @@
         -ms-transition: all .15s ease-in-out;
         -o-transition: all .15s ease-in-out;
         transition: all .15s ease-in-out;
+
         &:hover {
           color: #452268;
           text-decoration: none;
         }
       }
     }
+
     /*
     &::after {
       content: '';
