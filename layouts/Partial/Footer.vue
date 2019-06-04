@@ -6,8 +6,16 @@
           <nav class="footer-navbar">
             <nuxt-link to="/" class="footer-nav-brand">Victorya</nuxt-link>
             <ul class="footer-nav">
-              <li class="footer-nav-item" v-for="(item, index) in menus" :key="index">
-                <nuxt-link :to="item.link" class="footer-nav-link">{{ item.title }}</nuxt-link>
+              <li
+                class="footer-nav-item"
+                v-for="(item, index) in menus"
+                :key="index"
+              >
+                <nuxt-link
+                  :to="item.link"
+                  class="footer-nav-link">
+                  {{ item.title }}
+                </nuxt-link>
               </li>
               <li class="footer-nav-item">
                 <nuxt-link :to="`/test/${menu}`" class="footer-nav-link">Item</nuxt-link>
