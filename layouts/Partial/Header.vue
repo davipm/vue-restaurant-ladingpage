@@ -49,7 +49,7 @@
       return {
         menus: [
           { title: 'Package', link: '/' },
-          { title: 'About us', link: '/' },
+          { title: 'About us', link: '/about' },
           { title: 'Contact us', link: '/' },
         ]
       }

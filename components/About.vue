@@ -12,6 +12,7 @@
   import CardRight from './CardRight'
   import CardLeft from './CardLeft'
   import BigCard from './BigCard'
+
   export default {
     name: 'About',
     components: {
